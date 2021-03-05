@@ -42,4 +42,7 @@ setuptools.setup(
         (f"{ETC}/init.d", ["data/doorpi.sh"]),
         ("lib/systemd/system", ["data/doorpi.service", "data/doorpi.socket"]),
     ],
+    package_data = {
+        '': ['*.toml'],
+    }
 )
